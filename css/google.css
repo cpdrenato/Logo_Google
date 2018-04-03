@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.logo {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	/*background: #000; */
+	border-top: 50px solid #ea4335;
+	border-right: 50px solid #4285f4;
+	border-bottom: 50px solid #34a853;
+	border-left: 50px solid #fbb605;
+}
+.logo:before
+{
+	content: '';
+	position: absolute;
+	top: -155px;
+  right: -155px;
+	/* border-style: solid; */
+	border-top: 100px solid transparent;
+	border-right: 100px solid #fff;
+	border-bottom: 100px solid transparent;
+	border-left: 100px solid transparent;
+	/* border-radius: 50%; */
+	transform: rotate(90deg);
+}
+
+.logo:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -50px;
+	width: 100px;
+	height: 50px;
+	background: #4285f4;
+	transform: translate(-5px,-20px);
+}
+
+.box{
+	border-width: 60px 60px 60px 60px;
+	border-style: solid;
+	border-color: transparent transparent orange transparent;
+	height: 1px;
+	width: 1px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.triangulo{
+   width:0;
+   height:0;
+   border:1em solid;
+   font-size: 30px; /* Configure o tamanho do triângulo aqui. */
+}
+.prabaixo { border-color: #777 transparent transparent transparent; }
+.esquerda { border-color: transparent #777 transparent transparent; }
+.pracima  { border-color: transparent transparent #777 transparent; }
+.direita  { border-color: transparent transparent transparent #777; }
